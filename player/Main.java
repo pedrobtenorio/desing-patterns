@@ -4,11 +4,25 @@ public class Main {
 	
 	public static void main(String args[]) 
 	{
-		MP3Player mp3 = new MP3Player();
+		MusicPlayer mp3 = new MP3Player();
 		
-		MP4Player mp4 = new MP4Player();
+		VideoPlayer mp4 = new MP4Player();
 		
-		MP4Player adaptado = new MP4Adapter(mp3);
+		VideoPlayer adaptado = new MP4Adapter(mp3);
+		
+		System.out.println("MP3");
+		mp3.playMusic();
+		mp3.stopMusic();
+		
+		System.out.println("MP4");
+		
+		mp4.playVideo();
+		mp4.stopVideo();
+		
+		System.out.println("MP4 playing music only");
+		
+		adaptado.playVideo();
+		adaptado.stopVideo();
 		
 	}
 

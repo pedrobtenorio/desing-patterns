@@ -10,12 +10,12 @@ public class MP4Adapter implements VideoPlayer {
 		this.adaptador=adaptador;
 	}
 	
-	@Override
+	
 	public void playVideo() {
 		adaptador.playMusic();	
 	}
 
-	@Override
+	
 	public void stopVideo() {
 		adaptador.stopMusic();
 	}
